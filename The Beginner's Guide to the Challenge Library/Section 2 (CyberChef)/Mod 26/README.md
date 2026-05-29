@@ -5,7 +5,7 @@ Pada tantangan kali ini user diberikan sebuah file yang isinya adalah flag yang 
 
 untuk menyelesaikan tantangan ini user harus medecrypt code yang diberikan di dalam file value.txt. Kita bisa melakukannya dengan mengunjungi link website berikut ini https://gchq.github.io/CyberChef/ :
 
-<img width="1916" height="1027" alt="image" src="https://github.com/user-attachments/assets/508c5845-a18e-44a2-b359-79a60a14f8fa" />
+<img width="1916" height="1027" alt="image" src="https://github.com/user-attachments/assets/a0af66e5-2320-4902-a189-5bb21a996162" />
 
 di website CyberChef kita bisa memasak flag yang benar dengan resep yang tersedia XD. Cukup dengan memilih operations ROT13 lalu geser ke kolom recipe dan masukan flag yang terenkripsi tadi ke dalam kolom input :
 
