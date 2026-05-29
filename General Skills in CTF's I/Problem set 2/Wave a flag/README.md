@@ -7,10 +7,6 @@ Hint :
 
 command line :
 
-chmod +x warm 
+<img width="1122" height="362" alt="image" src="https://github.com/user-attachments/assets/b0793f0f-9442-49ca-8c09-75eb3960f42d" />
 
-./warm
->> Hello user! Pass me a -h to learn what I can do!
-
-./warm -h
->> Oh, help? I actually don't do much, but I do have this flag here: picoCTF{b1scu1ts_4nd_gr4vy_ac5832c}
+flag : picoCTF{b1scu1ts_4nd_gr4vy_ac5832c}
