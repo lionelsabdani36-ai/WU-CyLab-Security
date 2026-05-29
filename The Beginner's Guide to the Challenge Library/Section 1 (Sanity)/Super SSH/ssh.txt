@@ -1,1 +1,0 @@
-ssh ctf-player to titan.picoctf.net -p 63298
