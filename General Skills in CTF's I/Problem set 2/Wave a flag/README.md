@@ -8,3 +8,5 @@ Hint :
 command line :
 
 <img width="1122" height="362" alt="image" src="https://github.com/user-attachments/assets/b0793f0f-9442-49ca-8c09-75eb3960f42d" />
+
+flag : picoCTF{b1scu1ts_4nd_gr4vy_ac5832c}
