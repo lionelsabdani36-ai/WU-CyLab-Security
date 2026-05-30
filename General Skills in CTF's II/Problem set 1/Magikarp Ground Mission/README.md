@@ -1,52 +1,22 @@
-Hints :
--> Finding a cheatsheet for bash would be really helpful!
+<img width="1473" height="863" alt="image" src="https://github.com/user-attachments/assets/cfb8218a-a79f-4e3b-b86d-308922482a1c" />
+pada challange ini kita diperintahkan untuk mencari flag di dalam ssh
 
-Command line :
+untuk memasuki server ssh kita perlu menyalakan servernya dengan klik button Launch Instance.
+<img width="581" height="146" alt="image" src="https://github.com/user-attachments/assets/0281ea75-1072-4613-a3c0-9480ce9b80de" />
 
-╰─ ssh ctf-player@wily-courier.picoctf.net -p 62529
-The authenticity of host '[wily-courier.picoctf.net]:62529 ([18.189.99.27]:62529)' can't be established.
-ED25519 key fingerprint is: SHA256:ErlUUvYlrAxfSW1tIdzfOnGTBSr5OFkZvz0nMN4Vodw
-This key is not known by any other names.
-Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-Warning: Permanently added '[wily-courier.picoctf.net]:62529' (ED25519) to the list of known hosts.
-** WARNING: connection is not using a post-quantum key exchange algorithm.
-** This session may be vulnerable to "store now, decrypt later" attacks.
-** The server may need to be upgraded. See https://openssh.com/pq.html
-ctf-player@wily-courier.picoctf.net's password: 
-Welcome to Ubuntu 18.04.6 LTS (GNU/Linux 6.17.0-1013-aws x86_64)
+kita buka terminal dan jalankan perintah ini untuk memasuki servernya:
+<img width="1210" height="732" alt="image" src="https://github.com/user-attachments/assets/7c4c19e2-a057-4f55-8496-389505bdf564" />
 
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/advantage
-This system has been minimized by removing packages and content that are
-not required on a system that users do not log into.
+sesuaikan user, host dan password yang sudah di sediakan :
+<img width="1005" height="43" alt="image" src="https://github.com/user-attachments/assets/79ef1905-eed9-49c4-9ffa-3c6b9ee3457e" />
 
-To restore this content, you can run the 'unminimize' command.
+lakukan pencarian file dengan menggunakan command ls dan cat, user akan mendapatkan file yang merupakan part 1 dari flag dan instruksi untuk mendapatkan part 2 flag :
+<img width="698" height="183" alt="image" src="https://github.com/user-attachments/assets/f0afc495-1ca8-48d2-8542-c8e110129f6d" />
+ketika user menjalankan command cat ke file instruksinya kita di perintahkan ke root atau / untuk mendapatkan part 2 flag :
 
-The programs included with the Ubuntu system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
+jalankan command cd untuk berpindah ke /, jalankan command ls dan cat part 2 flag dan instruksi untuk mendapatkan part 3 flag :
+<img width="1115" height="210" alt="image" src="https://github.com/user-attachments/assets/2f1c1adc-ff29-40d0-a50d-84576831eda8" />
 
-Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
-applicable law.
-
-ctf-player@pico-chall$ ls
-1of3.flag.txt  instructions-to-2of3.txt
-ctf-player@pico-chall$ cat instructions-to-2of3.txt                                                                                                                          
-Next, go to the root of all things, more succinctly `/`
-ctf-player@pico-chall$ cat 1of3.flag.txt                                                                                                                                     
-picoCTF{xxsh_
-ctf-player@pico-chall$ cd /                                                                                                                                                  
-ctf-player@pico-chall$ ls                                                                                                                                                    
-2of3.flag.txt  bin  boot  challenge  dev  etc  home  instructions-to-3of3.txt  lib  lib64  media  mnt  opt  proc  root	run  sbin  srv	sys  tmp  usr  var
-ctf-player@pico-chall$ cat instructions-to-3of3.txt                                                                                                                          
-Lastly, ctf-player, go home... more succinctly `~`
-ctf-player@pico-chall$ cat 2of3.flag.txt                                                                                                                                     
-0ut_0f_//4t3r_
-ctf-                                                                                                                                             
-ctf-player@pico-chall$ cd ~
-ctf-player@pico-chall$ ls                                                                                                                                                    
-3of3.flag.txt  drop-in
-                                
-ctf-player@pico-chall$ cat 3of3.flag.txt                                                                                                                                     
-0b24fc4f}ctf-player
+ketika user menjalankan command cat ke file part 2 flag maka user akan mendapatkan flagnya, selanjutnya pada saat melakukan cat ke flag instruksinya user diperintahkan untuk berpindah direktori ke home atau ~ untuk mendpatkan part 3 flag :
+<img width="1115" height="130" alt="image" src="https://github.com/user-attachments/assets/1019ff98-d8c3-4891-b000-befedfacac14" />
+setelah kalian menjalankan commandnya maka kalian akan mendapatkan flag yang lengkap dan flagnya adalah : picoCTF{xxsh_0ut_0f_//4t3r_0b24fc4f}
