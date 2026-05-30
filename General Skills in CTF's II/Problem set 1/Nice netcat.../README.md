@@ -2,6 +2,9 @@
 
 sebelum mengerjakan challange ini pastikan user membaca write up ini : [Lets Warm Up](https://github.com/lionelsabdani36-ai/WU-CyLab-Security/tree/main/General%20Skills%20in%20CTF's%20I/Problem%20set%201/Lets%20Warm%20Up) dan [What's a netcat?](https://github.com/lionelsabdani36-ai/WU-CyLab-Security/tree/main/General%20Skills%20in%20CTF's%20I/Problem%20set%202/what's%20a%20net%20cat%3F)
 
+hal pertama yang harus dilakukan adalah menyalakan server untuk menjalankannya dengan menggunakan netcat di terminal :
+<img width="1367" height="220" alt="image" src="https://github.com/user-attachments/assets/31fcc90a-4cab-41b3-9030-51b1d419481e" />
+
 command line :
 -> nc wily-courier.picoctf.net 52701
 >> 112 
