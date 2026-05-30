@@ -1,4 +1,6 @@
-This challenge requires us to decode ASCII to base 10
+<img width="1475" height="946" alt="image" src="https://github.com/user-attachments/assets/19757893-36d9-46ae-98d3-048fccfb119f" />
+
+sebelum mengerjakan challange ini pastikan user membaca write up ini : [Lets Warm Up](https://github.com/lionelsabdani36-ai/WU-CyLab-Security/tree/main/General%20Skills%20in%20CTF's%20I/Problem%20set%201/Lets%20Warm%20Up) dan [What's a netcat?](https://github.com/lionelsabdani36-ai/WU-CyLab-Security/tree/main/General%20Skills%20in%20CTF's%20I/Problem%20set%202/what's%20a%20net%20cat%3F)
 
 command line :
 -> nc wily-courier.picoctf.net 52701
