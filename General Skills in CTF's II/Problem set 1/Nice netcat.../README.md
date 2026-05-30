@@ -5,8 +5,10 @@ sebelum mengerjakan challange ini pastikan user membaca write up ini : [Lets War
 hal pertama yang harus dilakukan adalah menyalakan server untuk menjalankannya dengan menggunakan netcat di terminal :
 <img width="1367" height="220" alt="image" src="https://github.com/user-attachments/assets/31fcc90a-4cab-41b3-9030-51b1d419481e" />
 
-command line :
--> nc wily-courier.picoctf.net 52701
+kalau server sudah menyala jalankan command berikut ini di terminal untuk memasuki servernya :
+<img width="453" height="42" alt="image" src="https://github.com/user-attachments/assets/0a8f3f3a-ff0d-40d4-8f9a-57a9d761cf8d" />
+
+setelah melakukan commandnya user akan mendapatkan kode ASCII seperti ini :
 >> 112 
 105 
 99 
@@ -47,40 +49,11 @@ command line :
 125 
 10 
 
-ASCII Table :
--> ascii
->> Usage: ascii [-adxohv] [-t] [char-alias...]
-   -t = one-line output  -a = vertical format
-   -d = decimal table  -o = octal table  -x = hex table  -b binary table
-   -h = this help screen -v = version information
-Prints all aliases of an ASCII character. Args may be chars, C \-escapes,
-English names, ^-escapes, ASCII mnemonics, or numerics in decimal/octal/hex.
+kita bisa memahami kode ASCII dengan melihat table ASCII dengan menjalankan command ascii :
+<img width="857" height="220" alt="image" src="https://github.com/user-attachments/assets/3bb0f4e6-cdaf-498c-8247-d30a48cc474a" />
+<img width="900" height="433" alt="image" src="https://github.com/user-attachments/assets/01d0cafc-0230-4bf9-b977-978865a1da48" />
 
-Dec Hex    Dec Hex    Dec Hex  Dec Hex  Dec Hex  Dec Hex   Dec Hex   Dec Hex
-  0 00 NUL  16 10 DLE  32 20    48 30 0  64 40 @  80 50 P   96 60 `  112 70 p
-  1 01 SOH  17 11 DC1  33 21 !  49 31 1  65 41 A  81 51 Q   97 61 a  113 71 q
-  2 02 STX  18 12 DC2  34 22 "  50 32 2  66 42 B  82 52 R   98 62 b  114 72 r
-  3 03 ETX  19 13 DC3  35 23 #  51 33 3  67 43 C  83 53 S   99 63 c  115 73 s
-  4 04 EOT  20 14 DC4  36 24 $  52 34 4  68 44 D  84 54 T  100 64 d  116 74 t
-  5 05 ENQ  21 15 NAK  37 25 %  53 35 5  69 45 E  85 55 U  101 65 e  117 75 u
-  6 06 ACK  22 16 SYN  38 26 &  54 36 6  70 46 F  86 56 V  102 66 f  118 76 v
-  7 07 BEL  23 17 ETB  39 27 '  55 37 7  71 47 G  87 57 W  103 67 g  119 77 w
-  8 08 BS   24 18 CAN  40 28 (  56 38 8  72 48 H  88 58 X  104 68 h  120 78 x
-  9 09 HT   25 19 EM   41 29 )  57 39 9  73 49 I  89 59 Y  105 69 i  121 79 y
- 10 0A LF   26 1A SUB  42 2A *  58 3A :  74 4A J  90 5A Z  106 6A j  122 7A z
- 11 0B VT   27 1B ESC  43 2B +  59 3B ;  75 4B K  91 5B [  107 6B k  123 7B {
- 12 0C FF   28 1C FS   44 2C ,  60 3C <  76 4C L  92 5C \  108 6C l  124 7C |
- 13 0D CR   29 1D GS   45 2D -  61 3D =  77 4D M  93 5D ]  109 6D m  125 7D }
- 14 0E SO   30 1E RS   46 2E .  62 3E >  78 4E N  94 5E ^  110 6E n  126 7E ~
- 15 0F SI   31 1F US   47 2F /  63 3F ?  79 4F O  95 5F _  111 6F o  127 7F DEL
+daripada melakukan cek satu persatu user hanya tinggal mengubahnya ke teks biasa dengan mengunakan CyberChef. pergi ke [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Charcode('Space',10)&input=MTEyIAoxMDUgCjk5IAoxMTEgCjY3IAo4NCAKNzAgCjEyMyAKMTAzIAo0OCAKNDggCjEwMCAKOTUgCjEwNyAKNDkgCjExNiAKMTE2IAoxMjEgCjMzIAo5NSAKMTEwIAo0OSAKOTkgCjUxIAo5NSAKMTA3IAo0OSAKMTE2IAoxMTYgCjEyMSAKMzMgCjk1IAo1NiAKNTEgCjU0IAo1NyAKNDkgCjEyNSAKMTAg) dan cari operations From Charcode, geser dan pindahkan ke kolom recipes, atur ke base 10, paste kode ASCII dari netcat yang sudah dijalankan dan klik button BAKE! berwarna hijau di bawah kolom recipes :
+<img width="1915" height="1031" alt="image" src="https://github.com/user-attachments/assets/4591cd77-04a8-49d7-99ce-6c39376621bb" />
 
-for quick steps we can decode it on the following website :
-https://gchq.github.io/CyberChef/
-
-Steps :
-* Log in to the web
-* On the Operations tab, look for from charcode
-* Drag the From Charcode operation to the Recipe column
-* Enter the ASCII code in netcat
-* set base to 10
-* Finally you got the flag, and the flag is : try is yourself dawg
+setelah melakukannya maka user akan mendapatkan flag di kolom output dan hasilnya adalah : picoCTF{g00d_k1tty!_n1c3_k1tty!_83691}
