@@ -12,11 +12,11 @@ sesuaikan user, host dan password yang sudah di sediakan :
 
 lakukan pencarian file dengan menggunakan command ls dan cat, user akan mendapatkan file yang merupakan part 1 dari flag dan instruksi untuk mendapatkan part 2 flag :
 <img width="698" height="183" alt="image" src="https://github.com/user-attachments/assets/f0afc495-1ca8-48d2-8542-c8e110129f6d" />
-ketika user menjalankan command cat ke file instruksinya kita di perintahkan ke root atau / untuk mendapatkan part 2 flag :
 
-jalankan command cd untuk berpindah ke /, jalankan command ls dan cat part 2 flag dan instruksi untuk mendapatkan part 3 flag :
+ketika user menjalankan command cat ke file instruksinya kita di perintahkan ke root atau / untuk mendapatkan part 2 flag. jalankan command cd untuk berpindah ke /, jalankan command ls dan cat part 2 flag dan instruksi untuk mendapatkan part 3 flag :
 <img width="1115" height="210" alt="image" src="https://github.com/user-attachments/assets/2f1c1adc-ff29-40d0-a50d-84576831eda8" />
 
 ketika user menjalankan command cat ke file part 2 flag maka user akan mendapatkan flagnya, selanjutnya pada saat melakukan cat ke flag instruksinya user diperintahkan untuk berpindah direktori ke home atau ~ untuk mendpatkan part 3 flag :
 <img width="1115" height="130" alt="image" src="https://github.com/user-attachments/assets/1019ff98-d8c3-4891-b000-befedfacac14" />
+
 setelah kalian menjalankan commandnya maka kalian akan mendapatkan flag yang lengkap dan flagnya adalah : picoCTF{xxsh_0ut_0f_//4t3r_0b24fc4f}
