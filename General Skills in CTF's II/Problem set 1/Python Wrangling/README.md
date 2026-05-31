@@ -1,24 +1,16 @@
 <img width="1483" height="778" alt="image" src="https://github.com/user-attachments/assets/de19f9fe-4667-4e1b-8ae7-adb8a9fabe7a" />
 
-Pada tantangan kali ini kita dipertintahkan untuk mendecode file yang berisikan flag yang terenkripsi dengan menggunakan file python yang sudah disediakan
+Pada tantangan kali ini user dipertintahkan untuk mendecode file yang berisikan flag yang terenkripsi dengan menggunakan file python yang sudah disediakan
 
-untuk mengerjakannya kita cukup menjalankan file python di terminal menggunakan command python3 :
+untuk mengerjakannya user cukup menjalankan file python di terminal menggunakan command python3 :
+<img width="1167" height="232" alt="image" src="https://github.com/user-attachments/assets/279083b8-2c55-4a8c-9481-5575afc0ed62" />
 
+setelah menjalankan commandnya seperti yang ada pada gambar terdapat teks yang menjelaskan fungsi dari file python tersebut yang menunjukkan ada 2 opsi yang bisa kita pilih yaitu opsi -e dan -d. Karena kita ingin melakukan decode kita pakai opsi decode yaitu opsi -d.
 
-command line :
+sekarang coba lihat apa isi dari file password untuk mendapatkan password untuk melakukan decode :
+<img width="1167" height="95" alt="image" src="https://github.com/user-attachments/assets/00d21294-8e2f-4d90-b1fb-b45b9fd333b3" />
 
-╰─ ls
-ende.py  flag.txt.en  password.txt
+setelah mendapatkan passwordnya, salin passwordnya dan simpan untuk dipakai ketika user sedang menjalankan script pythonnya. Selanjutnya user hanya tinggal menjalankan script pythonnya lagi dengan menggunakan opsi -d untuk mendecode file flag.txt.en :
+<img width="1167" height="112" alt="image" src="https://github.com/user-attachments/assets/8e2cd334-827b-44f5-a476-e07189fb5d92" />
 
-
-╰─ python3 ende.py 
-Usage: ende.py (-e/-d) [file]
-
-
-╰─ python3 ende.py -e flag.txt.en 
-Please enter the password:720b6ad346f84cd483c60c7464dd95d4
-gAAAAABqFxBYY9fv-j7he5AndM6wG_jYYGDLzOc9WM5b0ScP58R3oMZINv9XFaxvSDBUPU0j4odplru8DmZgQ3W0mYOeTNr8VZlHTVTEkaPabYCrpw40qq8_qcVNJTogXuWEc-C9x5rjNp8OTK5uCkGGBfuyABlu_L6FsLARoet_DzK0FMGFoeFcZVEFBcF4y3Eggp-TIuL3_atGrPp9HxrlcU02FnE0dNyyzhIBTlTqLoHIZ8hBBHBbEFZmlorwjxNkMI0TgIwh%                                                                               
-
-╰─ python3 ende.py -d flag.txt.en
-Please enter the password:720b6ad346f84cd483c60c7464dd95d4
-picoCTF{4p0110_1n_7h3_h0us3_9c5f9bcf}
+Setelah user menjalankan command sesuai dengan yang ada pada gambar maka akan ada flag yang muncul dan flagnya adalah : picoCTF{4p0110_1n_7h3_h0us3_9c5f9bcf}
