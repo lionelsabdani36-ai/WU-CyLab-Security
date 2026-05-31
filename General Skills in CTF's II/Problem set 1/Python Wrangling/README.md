@@ -1,6 +1,9 @@
-Hints :
--> Get the Python script accessible in your shell by entering the following command in the Terminal prompt: $ wget followed by a link to the script. The link can be copied from the details section.
--> $ man python
+<img width="1483" height="778" alt="image" src="https://github.com/user-attachments/assets/de19f9fe-4667-4e1b-8ae7-adb8a9fabe7a" />
+
+Pada tantangan kali ini kita dipertintahkan untuk mendecode file yang berisikan flag yang terenkripsi dengan menggunakan file python yang sudah disediakan
+
+untuk mengerjakannya kita cukup menjalankan file python di terminal menggunakan command python3 :
+
 
 command line :
 
