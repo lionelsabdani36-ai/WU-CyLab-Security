@@ -1,4 +1,4 @@
-<img width="1463" height="661" alt="image" src="https://github.com/user-attachments/assets/bb064aa1-70be-42ce-9525-9d03211c7c34" />
+<img width="1463" height="661" alt="image" src="https://github.com/user-attachments/assets/40acf32f-bb37-475e-bd72-b832b25f00c5" />
 
 Pada Callange kali ini bagi saya sangat mudah, saya cukup mengubah angka hexadecimal ke ASCII.
 Untuk itu saya menjalankan command echo untuk menampilkan kode ASCII dari angka hexadecimal :
